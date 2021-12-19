@@ -1,0 +1,11 @@
+transports:
+  tbot:
+    apiKey: ""
+    tergetID : 0
+    active: True
+  email:
+    host: ""
+    port: 25
+    username: ""
+    password: ""
+
