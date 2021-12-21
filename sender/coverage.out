@@ -1,0 +1,8 @@
+mode: set
+notificationService/sender/sender.go:14.53,15.33 1 1
+notificationService/sender/sender.go:21.2,21.18 1 1
+notificationService/sender/sender.go:25.2,25.12 1 1
+notificationService/sender/sender.go:15.33,16.40 1 1
+notificationService/sender/sender.go:16.40,18.4 1 1
+notificationService/sender/sender.go:21.18,23.3 1 1
+notificationService/sender/sender.go:28.46,34.2 2 1
