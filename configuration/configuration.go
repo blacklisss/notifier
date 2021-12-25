@@ -3,17 +3,19 @@ package configuration
 import (
 	"encoding/json"
 	"fmt"
+	"os"
+	"path/filepath"
+
 	"github.com/joho/godotenv"
 	"github.com/namsral/flag"
 	"gopkg.in/yaml.v2"
-	"os"
-	"path/filepath"
 )
 
 type TbotConfig struct {
 	ApiKey   string `json:"ApiKey" yaml:"apiKey"`
 	TargetID int    `json:"TargetID" yaml:"targetID"`
 	Active   bool   `json:"Active" yaml:"active"`
+	Callback string `json:"Callback" yaml:"callback"`
 }
 
 type EmailConfig struct {
@@ -22,6 +24,7 @@ type EmailConfig struct {
 	Password string `json:"Password" yaml:"password"`
 	Port     int    `json:"Port" yaml:"port"`
 	Active   bool   `json:"Active" yaml:"active"`
+	Callback string `json:"Callback" yaml:"callback"`
 }
 
 type Transports struct {

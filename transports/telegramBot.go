@@ -1,6 +1,7 @@
 package transports
 
 import (
+	"notificationService/configuration"
 	"notificationService/models"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
@@ -11,9 +12,9 @@ type TelegramBot struct {
 	updChan tgbotapi.UpdatesChannel // канал оставим, если вдруг будет какое-то управление из телеграмма
 }
 
-func NewTgBot(token string) (*TelegramBot, error) {
+func NewTgBot(config *configuration.Config) (*TelegramBot, error) {
 
-	bot, err := tgbotapi.NewBotAPI(token)
+	bot, err := tgbotapi.NewBotAPI(config.Transports.Tbot.ApiKey)
 	if err != nil {
 		return nil, err
 	}

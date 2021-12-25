@@ -3,6 +3,7 @@ transports:
     apiKey: ""
     tergetID : 0
     active: True
+    callback: "transports.NewTgBot"
   email:
     host: ""
     port: 25
